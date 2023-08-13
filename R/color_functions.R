@@ -64,7 +64,7 @@ color_palettes <- function(palette = "scale_1", ...) {
 
 ### function to generate color palettes
 
-palette_gen <- function(palette = "scale_1", direction = 1) {
+palette_gen <- function(palette = "scale_1", direction = 1, ...) {
 
   function(n) {
 
