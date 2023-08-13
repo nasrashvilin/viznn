@@ -64,7 +64,7 @@ bar_chart <- function(type = c('sf', 'xtab'),
                                    fill={{fill}},
                                    label=round({{label}})))+
      # geom_col(position = position_dodge2())+
-    # geom_text(position = position_dodge(width =.9),vjust=1)+
+    # geom_text(position = position_dodge2(width =.9),vjust=1)+
       theme_nn()
   }
 
@@ -91,7 +91,7 @@ bar_chart <- function(type = c('sf', 'xtab'),
     if (!is.null(fill)) {
       p <- p + geom_col(position = position_dodge2(), #fill = color_names('v_positive'),
                         width = .5)+
-        geom_text(position = position_stack(vjust=.5),
+        geom_text(position = position_dodge2(width =.9), vjust=1,
                   fontface='bold',
                   color='white')+
         scale_fill_nn(palette = {{palette}},
