@@ -89,7 +89,7 @@ bar_chart <- function(type = c('sf', 'xtab'),
   }
 
     if (!is.null(fill)) {
-      p <- p + geom_col(#fill = color_names('v_positive'),
+      p <- p + geom_col(position = position_dodge2(), #fill = color_names('v_positive'),
                         width = .5)+
         geom_text(position = position_stack(vjust=.5),
                   fontface='bold',
