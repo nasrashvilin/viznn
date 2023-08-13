@@ -38,7 +38,7 @@ bar_chart <- function(type = c('sf', 'xtab'),
                                    label = ifelse({{label}} > 1.5,
                                                     round({{label}}),
                                                           '')))+
-      scale_x_discrete(labels = function(x) str_wrap(x, 10))+
+      scale_x_discrete(labels = function(x) stringr::str_wrap(x, 10))+
       scale_y_continuous(limits = c(0,100))+
       theme_nn()
   }
@@ -71,7 +71,7 @@ bar_chart <- function(type = c('sf', 'xtab'),
 
   # add title if provided
   if (!is.null(title)) {
-    p <- p + labs(title = str_wrap(title, 45))
+    p <- p + labs(title = stringr::str_wrap(title, 45))
   }
 
 
