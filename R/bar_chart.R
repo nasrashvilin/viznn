@@ -49,10 +49,7 @@ bar_chart <- function(type = c('sf', 'xtab'),
                                    y={{var2}},
                                    fill={{fill}},
                                    label=round({{label}})))+
-      #geom_col(position = position_dodge2())+
-      #geom_text(position = position_dodge(width =.9),
-       #         vjust=1)+
-      scale_x_discrete(labels = function(x) str_wrap(x, 12))+
+      scale_x_discrete(labels = function(x) stringr::str_wrap(x, 12))+
       scale_y_continuous(limits = c(0,100))+
       theme_nn()
   }
@@ -63,8 +60,6 @@ bar_chart <- function(type = c('sf', 'xtab'),
                                    x={{var2}},
                                    fill={{fill}},
                                    label=round({{label}})))+
-     # geom_col(position = position_dodge2())+
-    # geom_text(position = position_dodge2(width =.9),vjust=1)+
       theme_nn()
   }
 
@@ -77,7 +72,7 @@ bar_chart <- function(type = c('sf', 'xtab'),
 
   # add title if provided
   if (!is.null(subtitle)) {
-    p <- p + labs(subtitle = subtitle)
+    p <- p + labs(subtitle = stringr::str_wrap(subtitle, 45))
   }
 
   if (is.null(fill)) {
@@ -89,12 +84,11 @@ bar_chart <- function(type = c('sf', 'xtab'),
   }
 
     if (!is.null(fill)) {
-      p <- p + geom_col(position = position_dodge2(), #fill = color_names('v_positive'),
-                        width = .5)+
+      p <- p + geom_col(position = position_dodge2(), width = .5)+
         geom_text(position = position_dodge2(width =.9), vjust=1,
                   fontface='bold',
                   color='white')+
-        scale_fill_nn(palette = {{palette}},
+        scale_fill_nn(palette = palette,
                       guide = guide_legend(
                         keywidth = .5,
                         keyheight = .5,
