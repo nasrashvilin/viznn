@@ -62,8 +62,6 @@ convert_ge <- function(data, var) {
   return(data)
 }
 
-convert_ge(test,demo)
-
 
 
 
