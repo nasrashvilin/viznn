@@ -19,12 +19,15 @@ theme_ndi_en <- function() {
       plot.title.position = 'plot',
       plot.title = element_text(size=20, color='#404040', face = 'bold'),
 
-
+      # text overall
       text = element_text(family = 'Calibri', color='black'),
       # strips
       strip.text = element_text(size=12, color='black', vjust=1),
       panel.spacing = unit(.8, 'lines'),
       panel.spacing.y = unit(.6, 'lines'),
+
+      #legend
+      legend.position = 'none',
 
 
       plot.margin = margin(t=.5, r=0.5,b=0.5, l=0.5, unit='cm'),
@@ -61,7 +64,9 @@ theme_ndi_ge <- function() {
       strip.text = element_text(size=12, color='black', vjust=1),
       panel.spacing = unit(.8, 'lines'),
       panel.spacing.y = unit(.6, 'lines'),
-
+      
+      #legend
+      legend.position = 'none',
 
       plot.margin = margin(t=.5, r=0.5,b=0.5, l=0.5, unit='cm'),
       plot.background = element_rect(color=NA, fill=NA),
