@@ -1,6 +1,6 @@
-# theme
+# some theme elements for charts
 
-#set theme for charts
+# theme for ENG charts
 theme_ndi_ge <- function() {
   library(ggplot2)
 
@@ -34,9 +34,7 @@ theme_ndi_ge <- function() {
 }
 
 
-# Georgian theme
-
-# basic theme for charts
+# theme for GEO charts
 
 theme_nn <- function() {
 
