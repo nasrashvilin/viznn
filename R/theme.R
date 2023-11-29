@@ -56,12 +56,12 @@ theme_ndi_ge <- function() {
 
       # plot title
       plot.title.position = 'plot',
-      plot.title = element_text(size=20, color='#404040', face = 'bold'),
+      plot.title = element_text(size=18, color='#404040', face = 'bold'),
 
 
       text = element_text(family = 'BPG Nino Mtavruli', color='black'),
       # strips
-      strip.text = element_text(size=12, color='black', vjust=1),
+      strip.text = element_text(size=11, color='black', vjust=1),
       panel.spacing = unit(.8, 'lines'),
       panel.spacing.y = unit(.6, 'lines'),
       
