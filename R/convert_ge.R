@@ -18,18 +18,28 @@ convert_ge <- function(data, var) {
       {{var}} := str_replace({{var}},
                              'Capital',
                              'თბილისი'),
+      
       {{var}} := str_replace({{var}},
                              'Large urban',
                              'დიდი ქალაქები'),
+      
+       {{var}} := str_replace({{var}},
+                             'Urban',
+                             'ქალაქი'),
+
+      
       {{var}} := str_replace({{var}},
                              'Small urban',
                              'პატარა ქალაქები'),
+      
       {{var}} := str_replace({{var}},
                              'Rural',
                              'სოფელი'),
+      
       {{var}} := str_replace({{var}},
                              'Minorities',
                              'უმცირესობების დასახლებები'),
+      
       {{var}} := str_replace({{var}},
                              'Minority settlements',
                              'უმცირესობების დასახლებები'),
@@ -38,6 +48,7 @@ convert_ge <- function(data, var) {
       {{var}} := str_replace({{var}},
                              'Male',
                              'კაცი'),
+      
       {{var}} := str_replace({{var}},
                              'Female',
                              'ქალი'),
@@ -46,9 +57,11 @@ convert_ge <- function(data, var) {
       {{var}} := str_replace({{var}},
                              'GD supporters',
                              'ქართ. ოცნების მხარდამჭერები'),
+      
       {{var}} := str_replace({{var}},
                              'Did not name a party',
                              'არ დაასახელეს პარტია'),
+      
       {{var}} := str_replace({{var}},
                              'Opposition supporters',
                              'ოპოზიციის მხარდამჭერები'),
