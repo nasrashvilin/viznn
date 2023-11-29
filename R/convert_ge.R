@@ -29,10 +29,10 @@ convert_ge <- function(data, var) {
                              'სოფელი'),
       {{var}} := str_replace({{var}},
                              'Minorities',
-                             'უმცირესობათა დასახლებები'),
+                             'უმცირესობების დასახლებები'),
       {{var}} := str_replace({{var}},
                              'Minority settlements',
-                             'უმცირესობათა დასახლებები'),
+                             'უმცირესობების დასახლებები'),
 
       # Gender
       {{var}} := str_replace({{var}},
