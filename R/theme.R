@@ -53,7 +53,7 @@ theme_ndi_ge <- function() {
 
       # axis
       axis.title = element_blank(),
-      axis.text.y = element_text(color='black', size=12),
+      axis.text.y = element_text(color='black', size=11),
       axis.text.x = element_blank(),
 
       # plot title
