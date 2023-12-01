@@ -8,6 +8,7 @@ theme_ndi_en <- function() {
     theme(
       # grids
       panel.grid.major.x = element_blank(),
+      panel.grid.minor.x = element_blank(),
       panel.grid.minor.y = element_blank(),
 
       # axis
@@ -47,6 +48,7 @@ theme_ndi_ge <- function() {
     theme(
       # grids
       panel.grid.major.x = element_blank(),
+      panel.grid.minor.x = element_blank(),
       panel.grid.minor.y = element_blank(),
 
       # axis
