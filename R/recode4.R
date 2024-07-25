@@ -1,3 +1,6 @@
+# Load the necessary library
+library(labelled)
+
 # Define the recode4 function
 recode4 <- function(data) {
   recoded_data <- data
