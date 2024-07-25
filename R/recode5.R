@@ -1,8 +1,9 @@
-# Load the necessary library
-library(labelled)
 
 # Define the recode5 function
 recode5 <- function(data) {
+
+  library(labelled)
+  
   recoded_data <- data
   
   # Recode the 5-point scale to a 3-point scale
