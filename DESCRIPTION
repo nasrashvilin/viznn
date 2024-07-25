@@ -1,11 +1,13 @@
 Package: viznn
 Type: Package
-Title: What the Package Does (Title Case)
-Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
-Encoding: UTF-8
-LazyData: true
+Title: Personal functions
+Version: 0.1.05
+Author: Nika Nasrashvili
+Maintainer: Nika Nasrashvili <nikanasra@gmail.com>
+Description: Personal functions
+License: What license it uses
+Imports:
+    dplyr (>= 1.0.0),
+    ggplot2 (>= 3.3.0)
+Suggests:
+    testthat (>= 3.0.0)
