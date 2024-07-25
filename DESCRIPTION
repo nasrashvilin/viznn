@@ -1,14 +1,17 @@
 Package: viznn
 Type: Package
-Title: Personal functions
-Version: 0.1.05
+Title: Personal
+Version: 0.1.0
 Author: Nika Nasrashvili
 Maintainer: Nika Nasrashvili <nikanasra@gmail.com>
 Description: Personal functions
-License: What license it uses
+License: MIT + file LICENSE
 Imports:
     dplyr (>= 1.0.0),
-    ggplot2 (>= 3.3.0)
-    labelled (>= 2.13.0)
+    ggplot2 (>= 3.3.0),
+    labelled (>= 2.8.0)
 Suggests:
     testthat (>= 3.0.0)
+    knitr
+    rmarkdown
+RoxygenNote: 7.2.3
