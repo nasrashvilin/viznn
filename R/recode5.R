@@ -61,9 +61,8 @@ recode5 <- function(data) {
 }
 
 # Example usage
-data5 <- labelled(c(1, 2, 3, 4, 5, -1, -2, -5),
-                  labels = c("Very good" = 1, "Good" = 2, "Neutral" = 3, "Bad" = 4, "Very bad" = 5, "Don't know" = -1, "Refuse to answer" = -2, "Other" = -5))
+#data5 <- labelled::labelled(c(1, 2, 3, 4, 5, -1, -2, -5), labels = c("Very good" = 1, "Good" = 2, "Neutral" = 3, "Bad" = 4, "Very bad" = 5, "Don't know" = -1, "Refuse to answer" = -2, "Other" = -5))
 
-recoded_data5 <- recode5(data5)
-print(recoded_data5)
-print(val_labels(recoded_data5))
+#recoded_data5 <- recode5(data5)
+#print(recoded_data5)
+#print(val_labels(recoded_data5))
