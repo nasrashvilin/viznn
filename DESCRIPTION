@@ -11,7 +11,7 @@ Imports:
     ggplot2 (>= 3.3.0),
     labelled (>= 2.8.0)
 Suggests:
-    testthat (>= 3.0.0)
-    knitr
+    testthat (>= 3.0.0),
+    knitr,
     rmarkdown
-RoxygenNote: 7.2.3
+
