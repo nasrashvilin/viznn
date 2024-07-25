@@ -9,6 +9,6 @@ License: What license it uses
 Imports:
     dplyr (>= 1.0.0),
     ggplot2 (>= 3.3.0)
-    ggplot2 (>= 2.13.0)
+    labelled (>= 2.13.0)
 Suggests:
     testthat (>= 3.0.0)
