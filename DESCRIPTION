@@ -6,10 +6,12 @@ Author: Nika Nasrashvili
 Maintainer: Nika Nasrashvili <nikanasra@gmail.com>
 Description: Personal functions
 License: MIT + file LICENSE
-Imports:
-    dplyr (>= 1.0.0),
-    ggplot2 (>= 3.3.0),
-    labelled (>= 2.8.0)
+Imports: 
+    dplyr,
+    srvyr,
+    ggplot2,
+    labelled,
+    stringr
 Suggests:
     testthat (>= 3.0.0),
     knitr,
