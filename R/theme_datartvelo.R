@@ -128,7 +128,3 @@ theme_datartvelo_ge <- function () {
       legend.position = 'none'
     )
 }
-
-
-
-save.image("C:/Users/Nnasrashvili/Dropbox/R/.RData")
