@@ -1,5 +1,5 @@
 theme_datartvelo_en <- function () {
-  ggplto2::theme_minimal()+
+  ggplot2::theme_minimal()+
     theme(
 
       
@@ -97,7 +97,7 @@ theme_datartvelo_en <- function () {
 
 ### Georgian 
 theme_datartvelo_ge <- function () {
-  ggplto2::theme_minimal()+
+  ggplot2::theme_minimal()+
     theme(
 
       
