@@ -96,7 +96,7 @@ theme_datartvelo_en <- function () {
 }
 
 ### Georgian 
-theme_datartvelo_ge <- <- function () {
+theme_datartvelo_ge <- function () {
   ggplto2::theme_minimal()+
     theme(
 
